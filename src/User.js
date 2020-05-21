@@ -9,10 +9,6 @@ class User {
     this.dailyStepGoal = userData.dailyStepGoal;
     this.friends = userData.friends;
   }
-
-  getAverage(array) {
-    array.reduce((sum, element) => sum += element) / a
-  }
 }
 
 if (typeof module !== 'undefined') {
