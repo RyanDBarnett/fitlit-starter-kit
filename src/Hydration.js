@@ -5,7 +5,3 @@ class Hydration {
     this.numOunces = hydrationData.numOunces;
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = Hydration;
-}

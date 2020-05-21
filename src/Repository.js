@@ -22,7 +22,3 @@ class Repository {
     return range.length > 1 ? new this.constructor(range) : range[0];
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = UserRepository;
-}

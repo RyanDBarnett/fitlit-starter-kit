@@ -4,7 +4,3 @@ class HydrationRepository extends Repository {
     this.hydrations = hydrationData.map(hydration => new Hydration(hydration));
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = HydrationRepository;
-}

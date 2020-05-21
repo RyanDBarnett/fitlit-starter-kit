@@ -6,7 +6,3 @@ class Sleep {
     this.sleepQuality = sleepData.sleepQuality;
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = Sleep;
-}

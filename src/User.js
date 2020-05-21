@@ -10,7 +10,3 @@ class User {
     this.friends = userData.friends;
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = User;
-}

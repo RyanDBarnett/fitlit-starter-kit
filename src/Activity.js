@@ -7,7 +7,3 @@ class Activity {
     this.flightsOfStairs = activityData.flightsOfStairs;
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = Activity;
-}

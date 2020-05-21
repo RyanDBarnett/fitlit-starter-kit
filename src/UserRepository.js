@@ -4,7 +4,3 @@ class UserRepository extends Repository {
     this.users = usersData.map(userData => new User(userData));
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = UserRepository;
-}

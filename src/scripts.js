@@ -3,8 +3,9 @@ const sleepRepository = new SleepRepository(sleepData);
 const activityRepository = new ActivityRepository(activityData);
 const userRepository = new UserRepository(userData);
 
+
 var randomUserID = Math.floor(Math.random() * userData.length + 1);
-displayUserInfo(userRepository.findByProperty(randomUserID));
+displayUserInfo(userRepository.findByProperty('id', randomUserID));
 
 function displayUserInfo(user) {
   const infoCardContainer = document.querySelector('.info-card-container');

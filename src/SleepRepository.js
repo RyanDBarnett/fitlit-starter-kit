@@ -4,7 +4,3 @@ class SleepRepository extends Repository {
     this.sleeps = sleepData.map(sleep => new Sleep(sleep));
   }
 }
-
-if (typeof module !== 'undefined') {
-  module.exports = SleepRepository;
-}
