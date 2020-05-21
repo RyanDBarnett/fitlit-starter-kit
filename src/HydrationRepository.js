@@ -8,11 +8,16 @@ class HydrationRepository {
   }
 
   filterByProperty(property, targetValue) {
-    return new HydrationRepository(this.hydrations.filter(hydration => hydration[property] === targetValue));
+    return new HydrationRepository(this.hydrations.filter(hydration => {
+        // console.log('value: ', hydration[property]);
+        // console.log('targetValue', targetValue);
+        return hydration[property] === targetValue
+      }));
   }
 
   getDateRange(endDate, numDays) {
     const endDateIndex = this.hydrations.findIndex(hydration => hydration.date === endDate);
+    console.log(endDateIndex)
     const range = this.hydrations.slice(endDateIndex - numDays, endDateIndex);
     return range.length > 1 ? new HydrationRepository(range) : range[0];
   }

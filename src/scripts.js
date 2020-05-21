@@ -4,7 +4,7 @@ const activityRepository = new ActivityRepository(activityData);
 const userRepository = new UserRepository(userData);
 
 var randomUserID = Math.floor(Math.random() * userData.length + 1);
-displayUserInfo(userRepository.filterByProperty(randomUserID));
+displayUserInfo(userRepository.findByProperty(randomUserID));
 
 function displayUserInfo(user) {
   const infoCardContainer = document.querySelector('.info-card-container');
